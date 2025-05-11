@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produk UMKM</title>
+    <title>Produk UMKM - Upload Gambar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#007bff"/>
 </head>
 <body>
     <div class="container">
-        <h1>Input Produk UMKM</h1>
+        <h1>Input Produk UMKM (dengan Upload Gambar)</h1>
         <form id="productForm">
             <div>
                 <label for="nama_produk">Nama Produk:</label>
@@ -18,15 +18,15 @@
             </div>
             <div>
                 <label for="harga">Harga:</label>
-                <input type="number" id="harga" name="harga" required>
+                <input type="number" id="harga" name="harga" step="any" required>
             </div>
             <div>
                 <label for="deskripsi">Deskripsi:</label>
                 <textarea id="deskripsi" name="deskripsi" required></textarea>
             </div>
             <div>
-                <label for="gambar_url">URL Gambar Produk:</label>
-                <input type="url" id="gambar_url" name="gambar_url">
+                <label for="gambar_file">Upload Gambar Produk:</label>
+                <input type="file" id="gambar_file" name="gambar_file" accept="image/*" required>
             </div>
             <div>
                 <label for="nama_umkm">Nama UMKM:</label>
